@@ -1,0 +1,16 @@
+<div class="test">
+    <p>home works!</p>
+    <h1>Đây là component home</h1>
+    <h2>Nhập tên</h2>
+    <input type="text" name="" id="" value="{{ name }}" title="Nhập tên bạn vào đây" [(ngModel)]="name">
+    <br> 
+    <h2>Nhập tuổi</h2>
+    <input type="text" name="" id="" [value]="age" title="Nhập tuổi của bạn vào đây" [(ngModel)]="age">
+    <h3>Chào bạn {{ name }}. Bạn đang học angular</h3>
+    <h4>Tuổi của bạn là {{ age }}</h4>
+    <h3 *ngIf="age > 18">Bạn già quá rồi</h3>
+    <h3 *ngIf="age <= 18">Bạn còn trẻ lắm</h3>
+    <h1>Chúc bạn thành công</h1>
+    <Button (click)="resetValue()">Reset giá trị</Button>
+</div>
+

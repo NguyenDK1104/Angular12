@@ -1,0 +1,10 @@
+<div class="test">
+    <p>dashboard works!</p>
+    <p>Nhập số tiền vào đây</p>
+    <input type="text" name="" id="" title="Nhập số tiền vào đây" [value]="money" [(ngModel)]="money">
+    <button id="nut1" type="button" (click)="getId()">nhấn vào đây</button>
+    <p *ngIf="money != null">Bạn có {{ money }} trong tài khoản</p>
+    <div *ngIf="money >= 1000; then nhieu; else it"></div>
+    <ng-template #nhieu><p>Bạn có nhiều tiền quá</p></ng-template>
+    <ng-template #it><p>Bạn có ít tiền quá</p></ng-template>
+</div>
